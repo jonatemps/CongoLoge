@@ -14,6 +14,13 @@ class Home extends Component
     }
 
 
+    public function show($id)
+    {
+        $bien = Bien::find($id);
+
+        redirect('/show/'.$bien->slug);
+    }
+
     public function render()
     {
         return view('livewire.home');

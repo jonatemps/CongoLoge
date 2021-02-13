@@ -26,13 +26,17 @@ class ChatTeam extends Component
     private $r;
     private $auth;
 
-    public function mount(ChatRepository $chatRepository,AuthManager $auth,$name){
+    public function mount(ChatRepository $chatRepository,AuthManager $auth,$name = ""){
 
-        $this->usr = User::whereRaw("CONCAT(`name`, `firstName`) = ?", $name)->first();
-        // $this->r = $chatRepository;
-        $this->auth = $auth;
-        $this->users = User::latest()->where('id','!=',auth()->user()->id)->get();
-        $this->text = '';
+        if ($name != "") {
+            $this->usr = User::whereRaw("CONCAT(`name`, `firstName`) = ?", $name)->first();
+            $this->auth = $auth;
+            $this->text = '';
+        }
+        $this->users = User::latest()
+                        ->where('id','!=',auth()->user()->id)
+                        ->whereIn('role_id',[1,3,4])
+                        ->get();
     }
 
     public function updated()
@@ -51,6 +55,7 @@ class ChatTeam extends Component
             $q->where('from',$id);
             $q->where('to',auth()->user()->id);
         })->with('user')->orderBy('created_at','DESC')->SimplePaginate(4);
+
         return $this->messages;
     }
 
@@ -80,7 +85,7 @@ class ChatTeam extends Component
     public function render()
     {
         return view('livewire.chat-team',[
-            'messages' => $this->chatWith($this->usr->id),
+            'messages' => $this->usr ? $this->chatWith($this->usr->id) : "",
             // 'unread' => $this->r->unreadCount($this->auth->user()->id)
         ]);
     }

@@ -52,10 +52,10 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 
-Route::livewire('/chat', 'users-list')
+Route::livewire('/chat/{name?}', 'chat-team')
         ->section('content')
         ->layout('layouts.master')->name('appChat')->middleware('auth');
 
-Route::livewire('/chat/{name}', 'chat-team')
-        ->section('content')
-        ->layout('layouts.master')->name('chat')->middleware('auth');
+// Route::livewire('/chat/{name?}', 'chat-team')
+//         ->section('content')
+//         ->layout('layouts.master')->name('chat')->middleware('auth');

@@ -23,12 +23,12 @@
 			<img class="mb-5" src="img/about.jpg" alt="">
 			<div class="row about-text">
 				<div class="col-xl-6 about-text-left">
-					<h5>Apropos de nous</h5>
-					<p>Lorem ipsum dolor sitdoni amet, consectetur donald adipis elite for. Vivamus interdum ultrices augue. Aenean dos cursus lania. Duis et fringilla leonardo. Mauris mattis sem, debut curus risus viverra sed. Vestibul vitae velit felis. Nulla placerat orci ante casat. Pellentesque ac placerat . Cras urna duis, ornare cursus purus.</p>
-					<p>Ut vel auctor ligula. Aenean nec dui pretium, commodo ligula sit amet, faucibus purus. Mauris at dolor imperdiet, aliquet nisi non, vulputate est. Maecenas feugiat sagittis lacus. Mauris dinissim consequat tellus id congue. Mauris bendum mollis viverra. Vestibulum in leo placerat sollicitudin varius.</p>
+                    <h5>Apropos de nous</h5>
+                    <p>Nous sommes soucieux reduire votre energie depensée pour trouver une proprieté qui vous ressemble.</p>
+					<p>Nous sommes parti d'une base; simplifier le contexte de la vente et de la location immobiliere en presentant une large annuaire des proprités d'après notre style de vie local.</p>
 				</div>
 				<div class="col-xl-6 about-text-right">
-					<h5>OUR QUALITY</h5>
+					<h5>NOS QUALITE</h5>
 					<p>Donec enim ipsum porta justo integer at velna vitae auctor integer congue magna at risus auctor purus unt pretium ligula rutrum integer sapien ultrice ligula luctus undo magna risus</p>
 					<ul class="about-list">
 						<li><i class="fa fa-check-circle-o"></i>Lorem ipsum dolor sitdoni amet, consectetur dont adipis elite vivamus interdum.</li>

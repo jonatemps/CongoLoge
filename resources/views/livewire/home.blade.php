@@ -9,7 +9,7 @@
                         <div class="{{$bien->destination == 'VENTE' ? 'sale-notic' : "rent-notic"}}">{{$bien->destination}}</div>
                         <div wire:poll wire:click="$emit('like',({{$bien->id}}))" class="like btn btn-outline-danger float-right fa fa-star {{$bien->isLike() ? 'active' : ''}}"></div>
                         </div>
-                        <div class="feature-text">
+                        <div wire:click="show({{$bien->id}})" style="cursor: pointer" class="feature-text">
                             <div class="text-center feature-title">
                                 <h5>{{$bien->title}}</h5>
                                 <p><i class="fa fa-map-marker"></i>{{substr($bien->adresse,0,23)}}.../ {{$bien->commune->name}}</p>

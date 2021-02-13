@@ -12,6 +12,7 @@
                     {{ session('message') }}
                 </div>
             @endif
+            {{-- {{dd($users)}} --}}
             @foreach ($users as $user)
                 <div class="col-6 col-lg-3 col-md-6">
                     <div class="team-member">
@@ -20,7 +21,7 @@
                             <div class="member-social">
                                 <a href=""><i class="fa fa-facebook"></i></a>
                                 <a href=""><i class="fa fa-instagram"></i></a>
-                                <a href="{{route('chat',$user->name.$user->firstName)}}"><i class="fa fa-comments"></i></a>
+                                <a href="{{route('appChat',$user->name.$user->firstName)}}"><i class="fa fa-comments"></i></a>
                             </div>
                         </div>
                         <div class="member-info">
@@ -31,7 +32,7 @@
                             <div class="member-contact">
                                 <p><i class="fa fa-phone"></i>{{$user->phone}}</p>
                                 <p><i class="fa fa-envelope"></i>{{$user->email}}</p>
-                                <p><i class="fa fa-comments"aria-hidden="true"></i><a href="{{route('chat',$user->name.$user->firstName)}}">&nbsp;Messages(s)</a>
+                                <p><i class="fa fa-comments"aria-hidden="true"></i><a href="{{route('appChat',$user->name.$user->firstName)}}">&nbsp;Messages(s)</a>
                                     @if ($user->unread())
                                         <span class="badge badge-pill badge-danger text-white">
                                             {{$user->unread()}}

@@ -61,7 +61,11 @@
 							</div>
 							<div class="col-md-4 col-sm-6 col-6">
 								<p><i class="fa fa-car"></i> {{$bien->garage}} Garage(s)</p>
-								<p><i class="fa fa-building-o"></i> Family Villa</p>
+								<p><i class="fa fa-building-o"></i>
+                                    @foreach ($bien->categories as $category)
+                                        <span class="badge badge-pill badge-dark ml-2">{{$category->name}}</span>
+                                    @endforeach
+                                </p>
 								<p><i class="fa fa-clock-o"></i> {{$bien->formatDate()}}</p>
 							</div>
 							<div class="col-md-4 col-6">
@@ -77,7 +81,7 @@
 				<!-- sidebar -->
 				<div class="col-lg-4 col-md-7 sidebar">
 					<div class="author-card">
-						<div class="author-img set-bg" data-setbg="{{ asset('storage/'.$bien->authorId->avatar) }}"></div>
+						<div class="author-img set-bg" data-setbg="{{ Voyager::image($bien->authorId->avatar) }}"></div>
 						<div class="author-info">
 							<h5>{{$bien->authorId->name}}</h5>
 							<p>Agent de l'Agence</p>
@@ -85,7 +89,7 @@
 						<div class="author-contact">
 							<p><i class="fa fa-phone"></i>{{$bien->authorId->phone}}</p>
 							<p><i class="fa fa-envelope"></i>{{$bien->authorId->email}}</p>
-                            <p><i class="fa fa-comments"aria-hidden="true"></i><a href="{{route('chat',$bien->authorId->name.$bien->authorId->firstName)}}">&nbsp;Messages(s)</a>
+                            <p><i class="fa fa-comments"aria-hidden="true"></i><a href="{{route('appChat',$bien->authorId->name.$bien->authorId->firstName)}}">&nbsp;Messages(s)</a>
                                 @if ($bien->authorId->unread())
                                     <span class="badge badge-pill badge-danger text-white">
                                         {{$bien->authorId->unread()}}
@@ -97,7 +101,7 @@
 					<div class="related-properties">
 						<h2>Propriété connexe</h2>
                         @foreach ($biens as $bien)
-                            <div class="rp-item">
+                            <div style="cursor: pointer;" onclick="window.location='{{route('bien.show',$bien->slug)}}';" class="rp-item">
                                 <div class="rp-pic set-bg" data-setbg="{{ Voyager::image($bien->image) }}">
                                     <div class="{{$bien->destination == 'VENTE' ? 'sale-notic' : "rent-notic"}}">{{$bien->destination}}</div>
                                 </div>

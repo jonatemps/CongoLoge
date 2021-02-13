@@ -19,7 +19,11 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
     @yield('style')
 	<!-- Favicon -->
-	<link href="img/favicon.ico" rel="shortcut icon"/>
+    <link href="{{ asset('img/CLicon.png') }}" rel="shortcut icon"/>
+    <!-- FAVICONS ICON ============================================= -->
+	{{-- <link rel="icon" href="img/CLicon.png" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="img/CLicon.png" /> --}}
+
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
@@ -126,14 +130,30 @@
 							<li><a href="{{route('home')}}">Acceuil</a></li>
 							<li><a href="{{route('biens.list')}}">Proprietés</a></li>
 							<li><a href="{{route('about')}}">A propos</a></li>
-                            <li><a href="contact.html">Contact</a></li>
                         <li><a class="heart fa fa-plus text-center" href="{{ route('biens.addForm')}}">&nbsp;&#x1F4E2;</a></li>
                             @livewire('header')
 						</ul>
 					</div>
 				</div>
 			</div>
-		</div>
+        </div>
+
+
+
+        {{-- <!-- Start of Async Callbell Code -->
+        <script>
+            window.callbellSettings = {
+            token: "UotFxEXERjAGZiUhS8gryv72"
+            };
+        </script>
+        <script>
+            (function(){var w=window;var ic=w.callbell;if(typeof ic==="function"){ic('reattach_activator');ic('update',callbellSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Callbell=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://dash.callbell.eu/include/'+window.callbellSettings.token+'.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+        </script>
+        <!-- End of Async Callbell Code --> --}}
+
+
+
+
 	</header>
 	<!-- Header section end -->
     {{-- @include('partials/flash-message') --}}
@@ -170,7 +190,7 @@
 			<div class="row">
 				<div class="col-6 col-lg-6 col-md-6 footer-widget">
 					<img src="{{ asset('img/logo.png') }}" alt="">
-					<p>Lorem ipsum dolo sit azmet, consecter dipise consult  elit. Maecenas mamus antesme non anean a dolor sample tempor nuncest erat.</p>
+					<p>Trouvez votre place avec notre style de vie local.</p>
 					<div class="social">
 						<a href="#"><i class="fa fa-facebook"></i></a>
 						<a href="#"><i class="fa fa-twitter"></i></a>
@@ -193,7 +213,6 @@
 						<li><a href="">Acceuil</a></li>
 						<li><a href="">Propriétés</a></li>
 						<li><a href="">Apropos</a></li>
-						<li><a href="">Contact</a></li>
 					</ul>
 				</div>
 				<div class="copyright">
@@ -201,7 +220,7 @@
                         Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This back-end is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a target="_blank">Valeur Ajoutée</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This front-end is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a target="_blank">Colorlib</a>
+{{-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This front-end is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a target="_blank">Colorlib</a> --}}
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 				</div>
 			</div>

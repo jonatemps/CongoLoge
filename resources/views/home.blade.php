@@ -7,7 +7,7 @@
 	<section class="hero-section set-bg" data-setbg="img/bg.jpg">
 		<div class="container hero-text text-white">
 			<h2>TROUVEZ VOTRE PLACE AVEC NOTRE STYLE DE VIE LOCAL.</h2>
-			<p>Recherchez des registres de propriétés immobilières; Bâtiment, Terrains et plus sur CongoLoge.com®.<br>Trouvez des informations sur la propriété à partir des données sources les plus complètes.</p>
+			<p>Recherchez des registres de propriétés immobilières; Bâtiment, Terrains et plus sur CongoLoge.com®.<br>Trouvez des informations sur des propriétés en RDC à partir des données sources les plus complètes.</p>
             <a href="{{route('biens.list')}}" class="site-btn">VOIR PLUS D'ANNONCES</a>
 		</div>
 	</section>
@@ -21,7 +21,7 @@
 		<div class="container">
 			<div class="section-title text-center">
 				<h3>ANNONCES EN VEDETTE</h3>
-				<p>Parcourir les maisons et appartements à vendre et à louer dans votre région</p>
+				<p>Parcourir les maisons et appartements à vendre et à louer dans votre région.</p>
 			</div>
 			@livewire('home')
             <div class="text-center">
@@ -43,19 +43,19 @@
 			<div class="row">
 				<div class="col-6 col-lg-3 col-md-6 f-cata">
 					<img src="img/feature-cate/1.jpg" alt="">
-					<h5>Appartement à louer</h5>
+					<h5>Appartement à louer ou à vendre</h5>
 				</div>
 				<div class="col-6 col-lg-3 col-md-6 f-cata">
 					<img src="img/feature-cate/2.jpg" alt="">
-					<h5>Maison Familiala</h5>
+					<h5>Maison à louer ou à vendre</h5>
 				</div>
 				<div class="col-6 col-lg-3 col-md-6 f-cata">
 					<img src="img/feature-cate/3.jpg" alt="">
-					<h5>Villas Resort</h5>
+					<h5>Villas à louer ou à vendre</h5>
 				</div>
 				<div class="col-6 col-lg-3 col-md-6 f-cata">
 					<img src="img/feature-cate/4.jpg" alt="">
-					<h5>Bâtiment bureau</h5>
+					<h5>Bâtiment bureau à louer ou à vendre</h5>
 				</div>
 			</div>
 		</div>

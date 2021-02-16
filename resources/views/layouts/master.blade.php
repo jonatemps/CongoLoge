@@ -6,8 +6,8 @@
 	<meta name="description" content="LERAMIZ Landing Page Template">
 	<meta name="keywords" content="LERAMIZ, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -130,7 +130,8 @@
 							<li><a href="{{route('home')}}">Acceuil</a></li>
 							<li><a href="{{route('biens.list')}}">Proprietés</a></li>
 							<li><a href="{{route('about')}}">A propos</a></li>
-                        <li><a class="heart fa fa-plus text-center" href="{{ route('biens.addForm')}}">&nbsp;&#x1F4E2;</a></li>
+                            {{-- <li><a class="heart fa fa-plus text-center" href="{{ route('biens.addForm')}}">Ajouter</a></li> --}}
+                            <li><a class="heart fa fa-plus text-center" href="{{ route('biens.addForm')}}">Ajouter</a></li>
                             @livewire('header')
 						</ul>
 					</div>
@@ -203,7 +204,7 @@
 						<p><i class="fa fa-map-marker"></i>11 tshopo/Lemba/Kinshasa/RDC</p>
 						<p><i class="fa fa-phone"></i>(+243) 813 134 572</p>
 						<p><i class="fa fa-envelope"></i>congologe@gmail.com</p>
-						<p><i class="fa fa-clock-o"></i>Mon - Sat, 08 AM - 06 PM</p>
+						<p><i class="fa fa-clock-o"></i>Lun - Sam, 08 AM - 06 PM</p>
 					</div>
 				</div>
 			</div>

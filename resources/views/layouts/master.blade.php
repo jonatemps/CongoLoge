@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-	<title>{{ config('app.name', 'Laravel') }}</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="LERAMIZ Landing Page Template">
-	<meta name="keywords" content="LERAMIZ, unica, creative, html">
+    <meta charset="UTF-8">
+    <title>@yield('title',$title ?? 'Congologe')</title>
+	<meta name="description" content="@yield('description',$description ?? 'trouvez une proprité sur mesure')">
+    <link rel="canonical" href="{{url()->current()}}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -72,7 +72,7 @@
 					</div>
 					<div class="col-lg-6 text-lg-right header-top-right">
 						<div class="top-social">
-							<a href=""><i class="fa fa-facebook"></i></a>
+							<a href="https://free.facebook.com/Congologe-100385745435461/"><i class="fa fa-facebook"></i></a>
 							<a href=""><i class="fa fa-twitter"></i></a>
 							<a href=""><i class="fa fa-linkedin"></i></a>
                         </div>
@@ -170,19 +170,19 @@
 		<div class="container">
 			<div class="clients-slider owl-carousel">
 				<a href="#">
-					<img src="{{ asset('img/partner/1.png') }}" alt="">
+					<img src="{{ asset('img/partner/pub.png') }}" alt="">
 				</a>
 				<a href="#">
-					<img src="{{ asset('img/partner/2.png') }}" alt="">
+					<img src="{{ asset('img/partner/pub.png') }}" alt="">
 				</a>
 				<a href="#">
-					<img src="{{ asset('img/partner/3.png') }}" alt="">
+					<img src="{{ asset('img/partner/pub.png') }}" alt="">
 				</a>
 				<a href="#">
-					<img src="{{ asset('img/partner/4.png') }}" alt="">
+					<img src="{{ asset('img/partner/pub.png') }}" alt="">
 				</a>
 				<a href="#">
-					<img src="{{ asset('img/partner/5.png') }}" alt="">
+					<img src="{{ asset('img/partner/pub.png') }}" alt="">
 				</a>
 			</div>
 		</div>

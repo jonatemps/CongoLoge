@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title',"Créer un compte | Congologe")
+
+@section('description',"S'enregistrer pour profiter des miltiples foctionalité au site.")
+
 @section('style')
     <link rel="stylesheet" href="css/register.css">
 @endsection

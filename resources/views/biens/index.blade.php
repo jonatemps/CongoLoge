@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title',"Nos propriétées à vendre où à louer | Congologe")
+
+@section('description',"Cherchez une propriété qui vous resseble en toute facilité.")
+
 @section('content')
     <!-- Page top section -->
 	<section class="page-top-section set-bg" data-setbg="img/page-top-bg.jpg">

@@ -8,7 +8,7 @@
             <div class="container">
                 <div class="section-title text-center mt-4 mb-1">
                     <h3 class="no-found">FILTREZ NOS MULTIPLES PROPRIETES.</h3>
-                    <p>Parcourez nos proprietés à vendre ou à louer dans votre région:</p>
+                    <p>Parcourez nos proprietés à vendre ou à louer partout en RDC.</p>
                 </div>
                 <div class="row m-1" style="background: #63caa1">
                     <div class="col-6 col-md-3">

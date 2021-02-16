@@ -41,11 +41,19 @@ Route::get('index', function () {
 Route::get('/show/{slug}', 'BienController@show')->name('bien.show');
 Route::livewire('/favorite/{userId}', 'favorite')
         ->section('content')
-        ->layout('layouts.master')->name('favorite')->middleware('auth');
+        ->layout('layouts.master',[
+            'title' => 'Vos coups de coeur | Congologe',
+            'description' => "Les maisons,appartement,studio,... qui ont touchés votre coeur."
+        ])
+        ->name('favorite')->middleware('auth');
 
 Route::livewire('signalAdd','signal-add')
         ->section('content')
-        ->layout('layouts.master')->name('biens.addForm');
+        ->layout('layouts.master',[
+            'title' => 'Sinalez votre propriété | Congologe',
+            'description' => "De partout où vous vous trouvez, dites à congologe de publier votre propriété."
+        ])
+        ->name('biens.addForm');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

@@ -1,5 +1,13 @@
 @extends('layouts.master')
 
+@section('title')
+    Signalez une proprité immobilière
+@endsection
+    De partout où vous vous trouvez, dites à Congologe que vous souhaiter qu'il publie votre proprieté.
+@section('description')
+
+@endsection
+
 @section('content')
     <section class="page-top-section set-bg" style="background-image: url({{asset('img/page-top-bg.jpg')}})" data-setbg="img/page-top-bg.jpg">
         <div class="container text-white">

@@ -1,5 +1,10 @@
 @extends('layouts.master')
 
+@section('title',"Le details d'une propriété | Congologe")
+
+@section('description',"Les caracteristique dont regroupe une proprété.")
+
+
 @section('content')
     <!-- Page top section -->
 	<section class="page-top-section set-bg" data-setbg="{{ asset('img/page-top-bg.jpg') }}">

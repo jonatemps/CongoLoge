@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title',"A propos de nous | Congologe")
+
+@section('description',"Une brève description de ce que noous nous sommes.")
+
 @section('content')
     <!-- Page top section -->
 	<section class="page-top-section set-bg" data-setbg="img/page-top-bg.jpg">

@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title',"Page d'acceuil | Congologe")
+
+@section('description',"Nous vous proposons les biens à louer ou à vendre en RDC.")
+
 @section('content')
 
 

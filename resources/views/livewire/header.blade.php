@@ -1,1 +1,1 @@
-<li><a class="heart fa fa-star" href="{{route('favorite',Auth::user()->id ?? '0')}}">&nbsp;Favotri({{$totalLikes}})</a></li>
+<li><a class="heart fa fa-star text-center" href="{{route('favorite',Auth::user()->id ?? '0')}}">&nbsp;Favotri <span class="badge badge-success">{{$totalLikes}}</span></a></li>

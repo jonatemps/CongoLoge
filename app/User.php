@@ -69,4 +69,15 @@ class User extends \TCG\Voyager\Models\User
                         ->count();
     }
 
+    public function likesCount(){
+
+        $likes =like::where('userId',Auth::user()->id)->get();
+        if ($likes) {
+            return $likes->count();
+        } else {
+        return 0;
+        }
+
+    }
+
 }

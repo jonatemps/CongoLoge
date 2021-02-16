@@ -101,7 +101,13 @@
                                             </span>
                                         @endif
                                     </a>
-                                    <a class="fa fa-bell" href="">&nbsp;Notification(s) <span class="badge badge-pill badge-danger">!</span></a>
+                                    <a class="fa fa-bell" href="{{route('favorite',Auth::user()->id ?? '0')}}">&nbsp;Favori(s)
+                                        @if (Auth::user()->likesCount())
+                                            <span class="badge badge-pill badge-danger">
+                                                {{Auth::user()->likesCount()}}
+                                            </span>
+                                        @endif
+                                    </a>
                                     <a class="dropdown-item fa fa-sign-out" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

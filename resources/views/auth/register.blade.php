@@ -13,7 +13,7 @@
 	<section class="page-top-section set-bg" data-setbg="img/page-top-bg.jpg">
 		<div class="container text-white">
             <h2>Creer un compte</h2>
-            <H4>Offrez-vous un compte et profitez de multiples foctionnalités reservées aux utilisateurs authentifiés ! &#x1F60E;</H4>
+            <H4>Offrez-vous un compte et profitez des multiples foctionnalités reservées aux utilisateurs authentifiés ! &#x1F60E;</H4>
 		</div>
 	</section>
     <!--  Page top end -->

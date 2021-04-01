@@ -6,7 +6,7 @@
 
 @section('content')
     <!-- Page top section -->
-	<section class="page-top-section set-bg" data-setbg="img/page-top-bg.jpg">
+	<section class="page-top-section1 set-bg" data-setbg="img/page-top-bg.jpg">
 		<div class="container text-white">
 			<h2>NOS PROPRIÉTÉS. &#x1F60E;</h2>
 		</div>
@@ -16,6 +16,6 @@
     @livewire('biens-list')
 
     <!-- Team section -->
-    @livewire('team')
+    {{-- @livewire('team') --}}
     <!-- Team section end-->
 @endsection

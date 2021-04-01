@@ -54,6 +54,11 @@ class BiensList extends Component
         $this->perPage = $this->perPage + 6;
     }
 
+    public function updatedorder($value)
+    {
+        dd($this->order);
+    }
+
     public function updated()
     {
         $this->resetPage();

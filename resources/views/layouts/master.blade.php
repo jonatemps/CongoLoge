@@ -137,7 +137,7 @@
 							<li><a href="{{route('biens.list')}}">Proprietés</a></li>
 							<li><a href="{{route('about')}}">A propos</a></li>
                             {{-- <li><a class="heart fa fa-plus text-center" href="{{ route('biens.addForm')}}">Ajouter</a></li> --}}
-                            <li><a class="heart fa fa-plus text-center" href="{{ route('biens.addForm')}}">Ajouter</a></li>
+                            <li><a class="heart fa fa-plus text-center text-white" href="{{ route('biens.addForm')}}"> Signaler</a></li>
                             @livewire('header')
 						</ul>
 					</div>

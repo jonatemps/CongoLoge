@@ -122,7 +122,8 @@ ol {
 }
 
 .spad {
-	padding-top: 100px;
+	padding-top: 60px;
+    padding-bottom: 50px;
 }
 
 .text-white h1,
@@ -485,7 +486,7 @@ a.heart.fa.fa-star{
 
 .fa.fa-plus{
     padding: 10px 10px;
-    background: #2fe63e;
+    background: #135819;
     border-radius: 15px;
 }
 /*------------------
@@ -523,14 +524,14 @@ a.heart.fa.fa-star{
 
 .service-item .service-text h5 {
 	font-weight: 400;
-	color: #fff;
+	color: rgb(0, 0, 0);
 	font-size: 18px;
 	margin-bottom: 8px;
 }
 
 .service-item .service-text p {
 	margin-bottom: 0;
-	color: #cccccc;
+	color: #201f1f;
 }
 
 /*------------------
@@ -1898,7 +1899,7 @@ a.heart.fa.fa-star{
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.header-top-right {
-        padding-top: 20px;
+        /* padding-top: 20px; */
         list-style: none;
 	}
 	.user-panel {
@@ -2117,7 +2118,7 @@ a.heart.fa.fa-star{
 	}
     .site-logo{
         height: 40px;
-        width: 100px;
+        width: 170px;
     }
     a.heart.fa.fa-star {
         text-align: center;
@@ -2140,7 +2141,7 @@ a.heart.fa.fa-star{
     }
     .service-item .service-text h5 {
         font-size: 14px;
-        font-size: 12px;
+        /* font-size: 12px; */
     }
     .service-item .service-text p {
         font-size: 12px;
@@ -2162,8 +2163,14 @@ a.heart.fa.fa-star{
         padding: 1px 0;
         margin-bottom: 4px;
     }
+
+    .page-top-section1 {
+        height: 200px;
+        text-align: center;
+        padding-top: 110px;
+    }
     .page-top-section {
-        height: 230px;
+        height: 270px;
         text-align: center;
         padding-top: 110px;
     }

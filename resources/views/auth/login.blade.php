@@ -13,7 +13,7 @@
 	<section class="page-top-section set-bg" data-setbg="img/page-top-bg.jpg">
 		<div class="container text-white">
             <h2>Connexion</h2>
-            <h4>Connectez-vous et profitez de multiples foctionnalités reservées aux utilisateurs authentifiés ! &#x1F60E;</h4><br>
+            <h4>Connectez-vous et profitez des multiples foctionnalités reservées aux utilisateurs authentifiés ! &#x1F60E;</h4><br>
             <p>( Chat,Favori,Notification...)</p>
 		</div>
 	</section>

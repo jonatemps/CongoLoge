@@ -11555,8 +11555,16 @@ pre code {
   .container,
   .container-sm,
   .container-md {
-    max-width: 720px;
+    max-width: 760px;
+    /* padding-top: 172px; */
   }
+  .homeImg {
+    padding-top: 250px;
+  }
+  .homeSection {
+    height: 480px;
+  }
+
 }
 
 @media (min-width: 992px) {

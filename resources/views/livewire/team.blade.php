@@ -30,7 +30,7 @@
                             </h5>
                             <span>Agent immobilier</span>
                             <div class="member-contact">
-                                <p><i class="fa fa-phone"></i>{{$user->phone}}</p>
+                                <p><i class="fa fa-phone"></i>+243 {{$user->phone}}</p>
                                 <p><i class="fa fa-envelope"></i>{{$user->email}}</p>
                                 <p><i class="fa fa-comments"aria-hidden="true"></i><a href="{{route('appChat',$user->name.$user->firstName)}}">&nbsp;Messages(s)</a>
                                     @if ($user->unread())

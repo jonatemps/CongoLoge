@@ -24,21 +24,23 @@
 	<!-- page -->
 	<section class="page-section">
 		<div class="container">
-			<img class="mb-5" src="img/about.jpg" alt="">
+			{{-- <img class="mb-5" src="img/about.jpg" alt=""> --}}
 			<div class="row about-text">
 				<div class="col-xl-6 about-text-left">
-                    <h5>Apropos de nous</h5>
-                    <p>Nous sommes soucieux reduire votre energie depensée pour trouver une proprieté qui vous ressemble.</p>
-					<p>Nous sommes parti d'une base; simplifier le contexte de la vente et de la location immobiliere en presentant une large annuaire des proprités d'après notre style de vie local.</p>
+                    <h5 class="font-weight-bold">Apropos de nous</h5>
+                    <p class=""><span class="font-weight-bold">C O N G O L O G E</span>  est une agence immobilière près de chez vous.</p>
+                    <p class="">Nous sommes soucieux de reduire le degré d'energie que vous depensés pour trouver une proprieté immobilière dont les caractéristiques vous convient.</p>
+					<p class="">Nous sommes parti d'une base; simplifier le contexte de la vente et de la location immobilière en présentant une large annuaire des proprités  immobilières d'après notre style de vie local.</p>
 				</div>
 				<div class="col-xl-6 about-text-right">
-					<h5>NOS QUALITE</h5>
-					<p>Donec enim ipsum porta justo integer at velna vitae auctor integer congue magna at risus auctor purus unt pretium ligula rutrum integer sapien ultrice ligula luctus undo magna risus</p>
+					<h5 class="font-weight-bold">nos qualités</h5>
+					<p>Il en existe tellement qui proposent les mêmes services, loin de nous d'avoir un grand opinion de nous même. Nous vous approchons à l'idée de vous faire vivre une nouvelle expérience.</p>
 					<ul class="about-list">
-						<li><i class="fa fa-check-circle-o"></i>Lorem ipsum dolor sitdoni amet, consectetur dont adipis elite vivamus interdum.</li>
-						<li><i class="fa fa-check-circle-o"></i>Integer pulvinar ante nulla, ac fermentum ex congue id vestibulum ensectetur. </li>
-						<li><i class="fa fa-check-circle-o"></i>Proin blandit nibh in quam semper iaculis lorem ipsum dolor salama ender.</li>
-						<li><i class="fa fa-check-circle-o"></i>Mauris at dolor imperdiet, aliquet nisi non, vulputate est sit amet.</li>
+						<li>Dans le but de vous procurer une grande satisfaction, nous ferrons de notre mieux pour reffleter les qualités suivantes:</li>
+						<li><i class="fa fa-check-circle-o"></i>Fiabilité,</li>
+                        <li><i class="fa fa-check-circle-o"></i>Rapidité,</li>
+						<li><i class="fa fa-check-circle-o"></i>Respect,</li>
+						<li><i class="fa fa-check-circle-o"></i>Honnêteté.</li>
 					</ul>
 				</div>
 			</div>

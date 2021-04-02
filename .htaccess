@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c >
+    <IfModule mod_negotiation.c >
+        Options -MultiViews -Index
+    </IfModule (IfModule)>
+
+    RéécrireEngine Sur
+
+    # En-tête d’autorisation de poignée
+    RéécritureCond %{HTTP:Authorization} .
+    RéécritureRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Rediriger slashes de suivi si ce n’est pas un dossier ...
+    RéécritureCond %{REQUEST_FILENAME} !-d
+    RéécritureCond %{REQUEST_URI} (.+)/$
+    RéécritureRule ^ %1 [L,R=301]
+
+    # Envoyer des demandes au contrôleur avant...
+    RéécritureCond %{REQUEST_FILENAME} !-d
+    RéécritureCond %{REQUEST_FILENAME} !-f
+    RéécrireRule ^ index.php [L]
+</IfModule (IfModule)>
